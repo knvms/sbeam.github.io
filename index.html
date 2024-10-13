@@ -10,40 +10,22 @@
             margin: 0;
             padding: 0;
             background-color: #808080; /* 灰色背景 */
-            position: relative; /* 使之成为定位上下文 */
-            overflow: hidden; /* 隐藏溢出的部分 */
         }
         .image-container {
             position: absolute; /* 绝对定位 */
-            top: 10px; /* 距离顶部20px */
-            left: 0%; /* 中心位置 */
-            transform: translateX(0%); /* 水平居中 */
-            text-align: center; /* 居中对齐文本 */
+            top: 20px; /* 距离顶部20px */
+            left: 20px; /* 距离左侧20px */
         }
         img {
-            width: 350px; /* 设置合理的图片宽度 */
+            width: 800px; /* 根据需要放大图片 */
             height: auto; /* 保持原始宽高比 */
             border-radius: 10px; /* 圆角边框 */
-        }
-        button {
-            margin-top: 350px; /* 图片下方10px */
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-        }
-        button:hover {
-            background-color: #45a049; /* 鼠标悬停时改变按钮颜色 */
         }
     </style>
 </head>
 <body>
     <div class="image-container">
         <img src="Pictures/sbeam.png" alt="Sbeam Image">
-        <button onclick="window.open('https://123pan.com', '_blank')">免费获取</button>
     </div>
 </body>
 </html>

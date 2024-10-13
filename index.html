@@ -13,15 +13,6 @@
             position: relative; /* 使之成为定位上下文 */
             overflow: hidden; /* 隐藏溢出的部分 */
         }
-        .video-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* 确保视频覆盖整个屏幕 */
-            z-index: -1; /* 使视频位于所有内容后面 */
-        }
         .image-container {
             position: absolute; /* 绝对定位 */
             top: 20px; /* 距离顶部20px */
@@ -50,10 +41,6 @@
     </style>
 </head>
 <body>
-    <video class="video-background" autoplay muted loop>
-        <source src="video/wall_car.m3u8" type="application/x-mpegURL">
-        您的浏览器不支持视频标签。
-    </video>
     <div class="image-container">
         <img src="Pictures/sbeam.png" alt="Sbeam Image">
         <button onclick="window.open('https://123pan.com', '_blank')">免费获取</button>
